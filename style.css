@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+/* Global CSS */
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: #2d4c50;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.navBar .logo {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+#search-input {
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+#search-input::placeholder {
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #138065;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#blog-container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 280px;
+  border: 1px solid #2d4c50;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 10px;
+  height: 480px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+  color: #2d4c50;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-card h2:hover {
+  color: rgba(234, 34, 34, 1);
+}
+
+.blog-card p {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  .navBar .logo {
+    font-size: 1.6rem;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  #search-input {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .blog-card {
+    width: 100%;
+  }
+}
